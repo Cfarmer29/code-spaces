@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-# Install XFCE4 – a lightweight graphical desktop environment
+# Install XFCE4 - a lightweight graphical desktop environment
 sudo apt-get update -y
 sudo apt-get install -y --no-install-recommends \
     xfce4 \
@@ -16,4 +16,4 @@ unset SESSION_MANAGER
 unset DBUS_SESSION_BUS_ADDRESS
 exec startxfce4
 EOF
-chmod +x ~/.vnc/xstartup
+chmod 700 ~/.vnc/xstartup
